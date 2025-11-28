@@ -15,66 +15,17 @@
         <div class="searchBox">
             <h1>Our Menu</h1>
             <div class="filterBtns">
-                <button id="all">all</button>
-                <button id="breakfast">breakfast</button>
-                <button id="lunch">lunch</button>
-                <button id="shakes">shakes</button>
+                <button onclick="itemsFinder()" id="all">all</button>
+                <button onclick="itemsFinder(this.id)" id="breakfast">breakfast</button>
+                <button onclick="itemsFinder(this.id)" id="lunch">lunch</button>
+                <button onclick="itemsFinder(this.id)" id="shakes">shakes</button>
             </div>
             <div class="mainSearchBox">
-                <input type="search" name="search" id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <input onkeypress="searchItems()" type="search" name="search" id="search">
+                <i onclick="searchItems()" class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
-        <div class="menuContainer">
-            <div class="card">
-                <div class="image"></div>
-                <div class="details">
-                    <div>
-                        <h3 id="uiItemName">Zinger Burger</h3>
-                        <div id="uiPrice">$15.99</div>
-                    </div><hr>
-                    <p id="uiDesc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore dolore earum quasi repudiandae, rem, ipsa culpa fugiat 
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image"></div>
-                <div class="details">
-                    <div>
-                        <h3 id="uiItemName">Chai</h3>
-                        <div id="uiPrice">$15.99</div>
-                    </div><hr>
-                    <p id="uiDesc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore dolore earum quasi repudiandae, rem, ipsa culpa fugiat 
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image"></div>
-                <div class="details">
-                    <div>
-                        <h3 id="uiItemName">Oreo Shake</h3>
-                        <div id="uiPrice">$15.99</div>
-                    </div><hr>
-                    <p id="uiDesc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore dolore earum quasi repudiandae, rem, ipsa culpa fugiat 
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image"></div>
-                <div class="details">
-                    <div>
-                        <h3 id="uiItemName">Halwa puri</h3>
-                        <div id="uiPrice">$15.99</div>
-                    </div><hr>
-                    <p id="uiDesc">
-                        Lorem ipsum dolor sit amet, consectetur elit. Iusto tempore dolore earum .
-                    </p>
-                </div>
-            </div>
-        </div>
+        <div class="menuContainer"></div>
     </div>
     <script src="./app.js"></script>
 </body>

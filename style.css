@@ -90,7 +90,7 @@ body {
 }
 
 .menuContainer {
-    padding-top: 6vh;
+    padding: 6vh 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -100,7 +100,7 @@ body {
 .mainSearchBox {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 5px;
     width: 30vw;
 }
@@ -116,4 +116,35 @@ body {
     border-radius: 7px;
     padding: 8px;
     font-size: 18px;
+}
+
+@media screen and (max-width: 1320px) {
+    .mainSearchBox {
+        width: 355px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        height: 350px;
+        width: 280px;
+    }
+
+    #search {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+        width: 300px;
+        box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.369);
+    }
+
+    .menuContainer {
+        gap: 45px;
+    }
 }
